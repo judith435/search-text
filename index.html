@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>test searchtext</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="node_modules/angular/angular.min.js"></script> -->
+
+    <script data-require="angular.js@1.0.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js" data-semver="1.0.7"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    Click: 
+    <div style="border: red thin solid; width: 100px; padding: 10px;">
+      <div ng-repeat="word in words"><a ng-click="$parent.selectedWords.push(word)">{{word}}</a></div>
+    </div>
+    Selected:
+    <div style="border: red thin solid; width: 100px; padding: 10px;" ng-bind-html-unsafe="text | highlightWord : selectedWords"></div>
+        Selected Words: {{selectedWords}}
+  </body>
+
+</html>
+
+
+<!-- <div style="border: red thin solid; width: 100px; padding: 10px;" ng-bind-html-unsafe="text | highlightWord : selectedWords"></div> -->

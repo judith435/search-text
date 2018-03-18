@@ -1,0 +1,24 @@
+{
+  "name": "search-text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./ -p8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/judith435/search-text.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/judith435/search-text/issues"
+  },
+  "homepage": "https://github.com/judith435/search-text#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "http-server": "^0.11.1"
+  }
+}
